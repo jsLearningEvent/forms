@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="JsLearningEvent, register">
+    <meta name="description" content="JsLearningEvent registering">
+    <meta name="author" content="Ashkan Zohrabi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpeg">
+</head>
+<body>
+    <h1>JsLearningEvent Register</h1>
+    <hr>
+    <form>
+        <fieldset>
+            <legend><b>Skils and Profile</b></legend>
+
+            <label for="about">About Me:</label><br>
+            <textarea id="about" name="about" rows="5"></textarea>
+            <br>
+            <br>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+            <br>
+            <br>
+
+            <label for="language">Languages:</label><br>
+            <select id="language" name="language" multiple size="5">
+                <option value="persian" selected>Persian</option>
+                <option value="english">English</option>
+                <option value="turkish">Turkish</option>
+                <option value="arabic">Arabic</option>
+                <option value="spanish">Spanish</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="avatar">Avatar:</label>
+            <input type="file" id="avatar" name="avatar">
+            <br>
+            <br>
+
+            <label for="exam">Exam date and time:</label>
+            <input type="datetime-local" id="exam" name="exam">
+            <br>
+            <br>
+
+            <label for="hours">Number of hours you can work:</label>
+            <input type="number" min="1" max="8" id="hours" name="hours">
+            <br>
+            <br>
+
+            <label for="start">Starting time:</label>
+            <input type="time" id="start" name="start">
+            <br>
+            <br>
+
+            <span>Skills:</span><br>
+            <label for="html">HTML:</label>
+            <input type="range" min="0" max="100" id="html" name="html"><br>
+            <label for="css">CSS:</label>
+            <input type="range" min="0" max="100" id="css" name="css"><br>
+            <label for="javascript">Javascript:</label>
+            <input type="range" min="0" max="100" id="javascript" name="javascript"><br>
+            <label for="react">React:</label>
+            <input type="range" min="0" max="100" id="react" name="react">
+            <br>
+            <br>
+
+            <span>Scope:</span><br>
+            <input type="checkbox" id="front" name="front" value="Front-End">
+            <label for="front"> Front-End</label><br>
+            <input type="checkbox" id="back" name="back" value="Back-End">
+            <label for="back"> Back-End</label><br>
+            <input type="checkbox" id="desktop" name="desktop" value="Desktop">
+            <label for="desktop"> Desktop</label>><br>
+            <input type="checkbox" id="mobile" name="mobile" value="Mobile">
+            <label for="mobile"> Mobile</label>
+            <br>
+            <br>
+
+            <label for="color">Profile color:</label>
+            <input type="color" id="color" name="color">
+            <br>
+            <br>
+
+            <label>How you know us:</label>
+            <input list="familarity">
+            <datalist id="familarity">
+                <option value="Ads">
+                <option value="TV">
+                <option value="Newspaper">
+                <option value="Friends">
+                <option value="Posters">
+            </datalist>
+        </fieldset>
+        <br>
+        <input type="reset" value="Reset">
+        <a href="./index.html"><input type="button" value="Prev"></a>
+        <a href="./account.html"><input type="button" value="Next"></a>
+    </form>
+</body>
+</html>
